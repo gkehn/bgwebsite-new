@@ -14,9 +14,8 @@ body {
   }
 }
 
-.carousel-item {
-  height: 65vh;
-  min-height: 300px;
+.home-item {
+  min-height: calc(100vh - 56px);
   background: no-repeat center center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -24,6 +23,130 @@ body {
   background-size: cover;
 }
 
+.row {
+  min-height: calc(100vh - 56px);
+}
+
 .portfolio-item {
   margin-bottom: 30px;
+}
+
+.bear {
+  background-image: url("../berkeley_bear.png");
+  background-repeat: no-repeat;
+  opacity: .3;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+/* Accordion Style for Collapsible FAQ */
+p.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin-bottom:10px;
+}
+
+/* Add a background color to the accordion if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+p.accordion.active, p.accordion:hover {
+    background-color: #ddd;
+}
+
+/* Unicode character for "plus" sign (+) */
+p.accordion:after {
+    content: '\2795'; 
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+/* Unicode character for "minus" sign (-) */
+p.accordion.active:after {
+    content: "\2796"; 
+}
+
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.4s ease-in-out;
+    opacity: 0;
+    margin-bottom:10px;
+}
+
+div.panel.show {
+    opacity: 1;
+    max-height: 500px; /* Whatever you like, as long as its more than the height of the content (on all screen sizes) */
+}
+
+.width {
+  max-width: 25%;
+  float: left;
+}
+
+.portrait-test {
+  max-width: 100%;
+  height: auto;
+  padding: 3%;
+  margin: auto;
+}
+
+.center {
+  overflow: hidden;
+}
+
+.clip-parent-blue {
+  clip-path: circle(130px at center);
+  background-color: rgb(0, 100, 255, .3);
+}
+
+.clip-parent-gold {
+  clip-path: circle(130px at center);
+  background-color: rgb(255,223,0, .7);
+}
+
+
+.clip-circle {
+  clip-path: circle(120px at center);
+
+}
+
+.pics p {
+  margin-top: -5%;
+  margin-bottom: 10%;
+}
+
+.bg-header {
+  background-color: rgb(42, 64, 117);
+}
+
+.hide {
+  color: white;
+  visibility: hidden;
+}
+
+.top-row {
+  text-align: center;
+}
+
+p {
+  font-family: serif;
+}
+
+.panel {
+  font-family: serif;
+}
+
+.hand:hover {
+  cursor: pointer;
 }
