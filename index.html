@@ -41,6 +41,9 @@
             <li class="nav-item">
               <a class="nav-link hand" onclick="showFaq()">FAQ</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link hand" onclick="showShop()">Shop</a>
+            </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 About
@@ -118,7 +121,7 @@
                 <h2>Books & Senior Portraits</h2>
                 <br />
                 <h4><b>Purchase your yearbook today.</b></h4>
-                  <p class="lead">The 2018-2019 yearbook is now available for purchase. Purchase a copy now along with your senior portrait to get 50% off! Online orders for the current book will open after the 2018-2019 academic year concludes. You can purchase the yearbook for the last academic year <a href="https://tinyurl.com/ybew277o">here</a>.</p>
+                  <p class="lead">The 2018-2019 yearbook is now available for purchase. Purchase a copy now along with your senior portrait to get 30% off! Online orders for the current book will open after the 2018-2019 academic year concludes. You can purchase the yearbook for the last academic year <a href="https://tinyurl.com/ybew277o">here</a>.</p>
                 <br />
                 <h4><b>Schedule your senior portraits.</b></h4>
                   <p class="lead">All Senior Portrait purchases and transactions go through our partner, <a href="http://www.laurenstudios.photos" target="_blank">Lauren Studios</a>.
@@ -304,7 +307,7 @@
 
             <p class="accordion">How much does the 2018-2019 yearbook cost?</p>
               <div class="panel">
-                  Normally, the yearbook is priced at 100 dollars. If you purchase a yearbook along with your senior portraits, they are 50 dollars.
+                  Normally, the yearbook is priced at 100 dollars. If you purchase a yearbook along with your senior portraits, they are 70 dollars.
               </div>
 
             <p class="accordion">How can I purchase older yearbooks?</p>
@@ -389,6 +392,41 @@
           <a href="index.html">Home</a>
         </li>
         <li class="breadcrumb-item active">About</li>
+      </ol>
+
+      <!-- Intro Content -->
+      <div class="container">
+        <div class="bear"></div>
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>About B&G</h2>
+            <br />
+            <h4>The Yearbook</h4>
+            <p class="lead">The Blue & Gold Yearbook is the official yearbook for the University of California, Berkeley. Published since 1875, the Blue & Gold provides readers coverage of events, issues and trends within the Berkeley community. As a historical record, the yearbook also includes campus facts, figures and people, including a section for graduating seniors’ portraits and majors.</p>
+            <br />
+
+            <h4>Our Mission</h4>
+            <p class="lead">Our mission is to truthfully encapsulate the current, unique Berkeley identity — its culture, events, and lifestyle — as students, for the students.</p>
+            <br />
+
+            <h4>The Organization</h4>
+            <p class="lead">The Blue & Gold Yearbook staff is comprised of over fifty individuals who design, produce, market, and distribute the book. Financially self-sufficient, the organization earns its revenue without aid of grants or outside funding. The Associated Students of the University of California (ASUC student government) formally sponsors the organization and provides it with office space.</p>
+            <br />
+
+            <h4>Join our staff</h4>
+            <p class="lead">We recruit at the start of each semester for our design, photography, copy, and marketing teams. The application for Fall 2018 Recruitment has closed, so keep an eye out for our next round in the spring!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Us -->
+    <div class="page" id="shop">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="index.html">Home</a>
+        </li>
+        <li class="breadcrumb-item active">Shop</li>
       </ol>
 
       <!-- Intro Content -->
@@ -623,6 +661,12 @@
     document.getElementById("faq").style.display = 'none';
     document.getElementById("contact").style.display = 'none';
     document.getElementById("board").style.display = 'none';
+    document.getElementById("shop").style.display = 'none';
+  }
+
+  function showShop() {
+    hideAllPages();
+    document.getElementById("shop").style.display = 'block';
   }
 
   function showAbout() {
