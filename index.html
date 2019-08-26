@@ -51,6 +51,7 @@
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
                 <a class="dropdown-item" onclick="showAbout()">About Us</a>
                 <a class="dropdown-item" onclick="showBoard()">Board</a>
+                <a class="dropdown-item" onclick="showJoin()">Join Us</a>
               </div>
             </li>
             <li class="nav-item">
@@ -417,10 +418,42 @@
             <br />
 
             <h4>Join our staff</h4>
-          <p class="lead">We recruit at the start of each semester for our design, photography, copy, and marketing teams. The application for Fall 2019 Recruitment is now open.  Find us on Sproul or check out our "Join Us" page!</p>
+          <p class="lead">We recruit at the start of each semester for our design, photography, copy, and marketing teams. The application for Fall 2019 Recruitment is now open.  Find us on Sproul or check out our <a href="#" onclick="showJoin()">"Join Us"</a> page!</p>
           </div>
         </div>
       </div>
+    </div>
+
+
+    <div class="page" id="join">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="index.html">Home</a>
+        </li>
+        <li class="breadcrumb-item active">About</li>
+      </ol>
+
+      <div class="col-lg-8 mx-auto">
+        <h2> Join Our Team </h2>
+        <br />
+        <h4> Fall Recruitment 2019 </h4>
+        <br />
+        <p class="lead"> Apply to be a part of the 2019-2020 Blue & Gold Staff! We have 4 teams: Copy, Design, Photography, and Marketing. Please feel free to apply to as many as you'd like to. </p>
+        <p class="lead"> Link to Fall Application <a href="https://tinyurl.com/bgfall19app"> here</a>. The application is due on Friday, September 6th at 11:59PM. You will be contacted for a short interview afterward.
+        <p class = "lead"> For more information, come out to one our information sessions, published on the graphic below.  Hope to see you there! </p>
+        <br /> 
+       </div>  
+
+       <style>.recruitgraphic{
+        text-align:center;
+       } </style>
+
+      <div class = "recruitgraphic">
+        <img src="assets/img/FA19recruiting/coverphoto.jpg" width = 900>
+      </div>
+      <br />
+      <br />
+
     </div>
 
     <!-- About Us -->
@@ -640,9 +673,9 @@
 
     <!-- Footer -->
     <footer class="py-3 bg-dark">
-      <div class="m-1 text-center"class="container">
+      <div class="m-1 text-center" class="container">
         <img src="assets/img/bg_logo.png"/>
-        <p class="text-white">Blue & Gold Yearbook, 2018</p>
+        <p class="text-white">Blue & Gold Yearbook, 2019</p>
       </div>
       <!-- /.container -->
     </footer>
@@ -663,6 +696,7 @@
     document.getElementById("faq").style.display = 'none';
     document.getElementById("contact").style.display = 'none';
     document.getElementById("board").style.display = 'none';
+    document.getElementById("join").style.display = 'none';
     // document.getElementById("shop").style.display = 'none';
   }
 
@@ -704,6 +738,11 @@
   function showBoard() {
     hideAllPages();
     document.getElementById("board").style.display = 'block';
+  }
+
+  function showJoin() {
+    hideAllPages();
+    document.getElementById("join").style.display = 'block';
   }
 
   hideAllPages();
