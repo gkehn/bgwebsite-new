@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Blue & Gold Yearbook</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/modern-business.css" rel="stylesheet">
+
+  </head> 
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark fixed-top bg-header">
+
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src = "assets/img/logos/BG_Long_logo-03.png" style = "height:35px; width:relative">
+        </a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link hand" href="Portraits.html">Portraits</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link hand" href="Sample.html">Sample Pages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link hand" href="Events.html">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link hand" href="FAQ.html">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link hand" href="Shop.html">Shop</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                About
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+                <a class="dropdown-item" href = "AboutUs.html">About Us</a>
+                <a class="dropdown-item" href = "Board.html">Board</a>
+                <a class="dropdown-item" href = "JoinUs.html">Join Us</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link hand" href = "Contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav> 
+
+
+ <!-- FAQ -->
+    <div id="faq" class="bg-light">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="index.html">Home</a>
+        </li>
+        <li class="breadcrumb-item active">FAQ</li>
+      </ol>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>Frequently Asked Questions</h2>
+              
+            <!-- Collapsible Q&A -->
+            <script>
+                document.addEventListener("DOMContentLoaded", function(event) { 
+                    var acc = document.getElementsByClassName("accordion");
+                    var panel = document.getElementsByClassName('panel');
+                    
+                    for (var i = 0; i < acc.length; i++) {
+                        acc[i].onclick = function() {
+                            var setClasses = !this.classList.contains('active');
+                            setClass(acc, 'active', 'remove');
+                            setClass(panel, 'show', 'remove');
+
+                            if (setClasses) {
+                                this.classList.toggle("active");
+                                this.nextElementSibling.classList.toggle("show");
+                            }
+                        }
+                    }
+
+                    function setClass(els, className, fnName) {
+                        for (var i = 0; i < els.length; i++) {
+                            els[i].classList[fnName](className);
+                        }
+                    }
+                });
+                
+            </script>
+            
+            <p class="accordion">What is a Senior Portrait? How do I take one?</p>
+              <div class="panel">
+                  Graduating seniors at Cal take their senior portraits for inclusion in the B&G Yearbook. Only seniors who take their portraits will be included in the yearbook.
+                  Sitting fees start at $5. Packages for purchasing portraits are sold by our photography company, Lauren Studios.
+                  <br>
+                  <br>If you are graduating in December 2019, May 2020, or Summer 2020, sign-up to take your senior portraits today!
+                  All students who have senior standing should have received an email from Lauren Studios that includes a personal client-ID. Use this client-ID to make an appointment <a href="http://www.laurenstudios.photos/">online!</a>
+              </div>
+            
+            <p class="accordion">I took my senior portraits, now what?</p>
+              <div class="panel">
+                  You will receive an email from Lauren Studios in 2-3 weeks once your proofs are available to view online. There, you can select your “yearbook photo”. Physical proofs will also be mailed to you in 3-4 weeks. If you are interested in purchasing photo packages, you may do so through Lauren Studios.
+                  <br>
+                  <br>Meanwhile, you can purchase the 2020 B&G Yearbook! <i>(link coming soon) </i>
+              </div>
+
+            <p class="accordion">What are the senior portrait sitting options?</p>
+              <div class="panel">
+                  5 poses | $5 | 5 poses for yearbook photo
+                  <br>10 poses | $15 | 5 poses for yearbook photo, 5 additional poses: cap + gown or casual outfits
+                  <br>15 poses | $25 | 5 poses for yearbook photo, 5 cap + gown, 5 casual outfits
+              </div>
+
+            <p class="accordion">How much does the 2019-2020 yearbook cost?</p>
+              <div class="panel">
+                  The Yearbook costs $100 for pre-orders. <br> <br>
+                  However, if you pre-order a book at your Senior Portrait Sessions, you can get the book for $50.
+              </div>
+
+            <p class="accordion">How can I purchase older yearbooks?</p>
+              <div class="panel">
+                  Please <a href="#" onclick="showContact()">contact us</a> with your order request and we will check our archives to see if we have copies of the yearbook you’ve selected.
+              </div>
+
+            <p class="accordion">When will I receive my yearbook?</p>
+              <div class="panel">
+                  The Blue & Gold Yearbook is a Fall release book, which means it is printed and published over the summer for release sometime in the Fall Semester.
+                  <br>
+                  <br>If you opted to pick up your yearbook, you will receive an email from when it is ready for pick up on campus.
+                  <br>If you opted to have the book shipped to you, you will receive an email from us once your book has been shipped.
+              </div>
+            
+            <p class="accordion">I ordered a yearbook and it was never sent to me!</p>
+              <div class="panel">
+                  Our default option is for books to be picked up on campus; unless you paid an additional shipping and handling charge, then you should receive an e-mail when the book is available for pickup. If you would like to inquire about getting your yearbook delivered to you, please <a href="#" onclick="showContact()">contact us</a>.
+              </div>
+            
+            <p class="accordion">I am not satisfied with my senior portrait. Can I retake it?</p>
+              <div class="panel">
+                  Yes, of course! Retakes are free for all Seniors.
+              </div>
+            
+            <p class="accordion">How can I purchase my senior portrait photos?</p>
+              <div class="panel">
+                  All Senior Portrait purchases and transactions go through our partner, <a href="http://www.laurenstudios.photos" target="_blank">Lauren Studios</a>.
+                  <br>Please contact Lauren Studios for questions regarding senior portrait appointments, proofs, and purchases.
+                  <br>
+                  <br>website | <a href="http://www.laurenstudios.photos" target="_blank">www.laurenstudios.photos</a>
+                  <br>email | info@laurenstudios.com
+                  <br>call | (951) 272-8600
+              </div>
+            
+            <p class="accordion">How can I get involved in Blue & Gold Yearbook?</p>
+              <div class="panel">
+                  We recruit every semester for new talents for our journalism, photography, design, and business teams. Click <a href="#" onclick="showAbout()">here</a> for more details.
+              </div>
+              
+            <p class="accordion">My question isn't listed here!</p>
+              <div class="panel">
+                  Please <a href="#" onclick="showContact()">contact us</a> with your inquiry.
+              </div>
+              
+          </div>
+        </div>
+      </div>
+    </div>
+    
+<!-- Footer -->
+    <footer class="py-3 bg-dark">
+      <div class="m-1 text-center" class="container">
+        <img src="assets/img/bg_logo.png"/>
+        <p class="text-white">Blue & Gold Yearbook, 2019</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>
