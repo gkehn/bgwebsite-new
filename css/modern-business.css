@@ -150,3 +150,8 @@ p {
 .hand:hover {
   cursor: pointer;
 }
+
+.btn:hover{
+  background-image: none;
+  background-color: #95bbed;
+}
