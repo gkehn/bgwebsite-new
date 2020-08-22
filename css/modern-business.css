@@ -140,11 +140,11 @@ div.panel.show {
 }
 
 p {
-  font-family: serif;
+  font-family: sans-serif;
 }
 
 .panel {
-  font-family: serif;
+  font-family: sans-serif;
 }
 
 .hand:hover {
