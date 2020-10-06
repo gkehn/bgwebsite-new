@@ -176,6 +176,11 @@ p {
   font-family: 'Open Sans', sans-serif;
 }
 
+li {
+  font-family: 'Open Sans', sans-serif;
+  list-style-position: outside;
+}
+
 .panel {
   font-family: 'Open Sans', sans-serif;
 }
