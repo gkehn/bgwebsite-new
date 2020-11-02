@@ -83,7 +83,8 @@
         <div class="row" style="padding-top:20px; min-height:50px">
           <div class="col-lg-9">
             <div class="carousel-item active" style="max-height:400px; overflow:hidden">
-              <a href = "https://tinyurl.com/bg19-20-yearbook-form"> <img class="d-block img-fluid" src="assets/img/Store_pictures/package_art_1.jpg" style="width:100%; margin-top:-20%" >            
+              <img class="d-block img-fluid" src="assets/img/Store_pictures/package_art_1.jpg" style="margin-top:-20%" >
+              <a href = "https://tinyurl.com/bg19-20-yearbook-form">             
                 <div class ="middle">
                   <div class = "text"> NEW! Order the 2019-2020 Yearbook </div>
                 </div>
@@ -91,16 +92,21 @@
             </div>
           </div>
           <div class="col-lg-3">
-            <p class="lead" style="position:relative; top:50%; transform:translateY(-50%)">To purchase older yearbooks, please return in the spring.</p>
+            <p class="lead" style="position:relative; top:50%; transform:translateY(-50%)">New arrival! The 2019-2020 Yearbook is now available to order.</p>
           </div>
         </div>
         <div class="row" style="padding-top:30px; padding-bottom:30px; min-height:50px">
           <div class ="col-lg-3">
-            <p class="lead" style="position:relative; top:50%; transform:translateY(-50%)"><a href = "mailto:info.bgyearbook@gmail.com">Email us</a> for more information.</p>
+            <div style="position:relative; top:50%; transform:translateY(-50%)">
+              <p class="lead">Pre-order the 2020-2021 Yearbook today! You will receive an email when your book is ready for pick-up.</p>
+              <br>
+              <p class="lead"><i>To purchase older yearbooks, please return in the spring. <a href = "mailto:info.bgyearbook@gmail.com">Email us</a> for more information.</i></p>
+            </div>
           </div>
           <div class="col-lg-9">
             <div class="carousel-item active" style="max-height:400px; overflow:hidden">
-              <a href = "https://tinyurl.com/bgyearbook-2021purchase"> <img class="d-block img-fluid" src="assets/img/Store_pictures/yearbook_hand.jpg" style="width:100%; margin-top:-5%" >            
+              <img class="d-block img-fluid" src="assets/img/Store_pictures/yearbook_hand.jpg" style="margin-top:-5%" >
+              <a href = "https://tinyurl.com/bgyearbook-2021purchase">             
                 <div class ="middle">
                   <div class = "text"> Pre-Order the 2020-2021 Yearbook Now </div>
                 </div>
@@ -127,20 +133,11 @@
 
 .middle {
   transition: .5s ease;
-  opacity: 0;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%)
-}
-
-.carousel-item:hover .image {
-  opacity: 0.3;
-}
-
-.carousel-item:hover .middle {
-  opacity: 1;
 }
 
 .text {
@@ -149,6 +146,15 @@
   font-size: 16px;
   padding: 16px 32px;
   text-align: center;
+  transition: .5s ease;
+}
+
+.carousel-item:hover .image {
+  opacity: 0.3;
+}
+
+.middle:hover .text {
+  text-decoration: underline;
 }
 </style>
 
