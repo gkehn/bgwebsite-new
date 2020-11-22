@@ -83,7 +83,8 @@
       </ol>
 
       <div class="container">
-        <!-- <div class="bear" style="position:absolute; z-index:0; max-width:100vw; background-image:url('assets/img/aesthetic/ricky_sather.jpg')"></div> -->
+        <!-- <div class="bear" style="position:absolute; z-index:1; margin-top:-1rem; margin-left:auto; margin-right:auto; max-width:100vw; height:100%; background-image:url('assets/img/aesthetic/ricky_sather.jpg'); background-size:auto 100%; opacity:.2"></div> -->
+        <div class="home-item">
         <div class="row">
           <div class="col-lg-8 mx-auto">
             <h2>Connect With Us</h2>
@@ -106,11 +107,14 @@
                 Want to contribute any <i>content or media</i> to the yearbook for this year? Find out more <a href="https://tinyurl.com/bgcontentcontribution">here</a>!
                 <ul style="margin-bottom:0">
                   <li style="list-style-type:circle; font-size:1.1rem">Everyone that fills out this form will receive custom-made B&G stickers at the end of the Fall 2020 semester.</li>
-                  <li style="list-style-type: circle; font-size:1.1rem">At the end of the semester, we will select one winner to receive a <i>$25 Amazon gift card.</i></li>
+                  <li style="list-style-type:circle; font-size:1.1rem">At the end of the semester, we will select one winner to receive a <i>$25 Amazon gift card.</i></li>
                 </ul>
               </li>
               <li class = "lead">
-                <i>Feedback</i>? Let us know <a href="https://tinyurl.com/bg20-21feedback">here</a>.
+                Thoughts about the <i>website</i>? Tell us <a href="https://tinyurl.com/bgwebsitefeedback">here</a>.
+              </li>
+              <li class = "lead">
+                General <i>feedback</i>? Let us know <a href="https://tinyurl.com/bg20-21feedback">here</a>.
               </li>
             </ul>
             <br>
@@ -118,11 +122,27 @@
           </div>
         </div>
       </div>
+      </div>
     </div>
 
+<style>
+  .home-item::before {
+    content: "";
+    background: url('assets/img/aesthetic/ricky_sather.jpg');
+    background-size: cover;
+    opacity: 0.12;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    position: absolute;
+    margin-top: -15px;
+    height: 110.5%;
+  }
+</style>
 
 <!-- Footer -->
-    <footer class="py-3 bg-dark">
+    <footer class="py-3 bg-dark" style="z-index:2">
       <div class="m-1 text-center" class="container">
         <img src="assets/img/logos/Blue & Gold Final Logo-01.png" style = "height:60px; width:relative"/>
         <p class="text-white">Blue & Gold Yearbook 2020</p>
