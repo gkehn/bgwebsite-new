@@ -109,22 +109,6 @@ div.panel.show {
   overflow: hidden;
 }
 
-/*.clip-parent-blue {
-  clip-path: circle(130px at center);
-  background-color: rgb(0, 100, 255, .3);
-}
-
-.clip-parent-gold {
-  clip-path: circle(130px at center);
-  background-color: rgb(255,223,0, .7);
-}
-
-
-.clip-circle {
-  clip-path: circle(120px at center);
-
-}*/
-
 .circular-landscape {
   display: inline-block;
   position: relative;
@@ -155,11 +139,6 @@ div.panel.show {
   height: auto;
   margin-top: -20px;
 }
-
-/*.pics p {
-  margin-top: -5%;
-  margin-bottom: 10%;
-}*/
 
 .bg-header {
   background-color: #003663;
